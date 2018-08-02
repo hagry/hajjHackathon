@@ -1,0 +1,322 @@
+
+
+		<!-- start header bottom-->
+		<div class="delcd-hero">
+			<div class="delcd-overlay"></div>
+			<div class="delcd-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/1.png);">
+				<div class="desc">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-5">
+								<div class="tabulation">
+
+								  <!-- Nav tabs -->
+								   <ul id="form-tab-panel" class="nav nav-tabs">
+								      <li class="nav-item">
+								      	<a class="nav-link active" href="#flights" data-toggle="tab">Flights</a>
+								      </li>
+								      <li class="nav-item">
+								    	   <a class="nav-link" href="#trains" data-toggle="tab">Trains</a>
+								      </li>
+									  <li class="nav-item">
+								    	   <a class="nav-link" href="#hotels" data-toggle="tab">Hotels</a>
+								      </li>
+								   </ul>
+
+								   <!-- Tab panes -->
+								   <div class="tab-content">
+
+									 <!-- start tab flights -->
+									 <div class="tab-pane active" id="flights">
+										 <form action="flights-results" method="get">
+										  <!-- start destination -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>From:</label>
+												<input type="text" name="from" class="form-control from-place" placeholder="Cairo , Egypt"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>To Umrah:</label>
+												<input type="text" name="to" class="form-control to-place" placeholder="Jida, Saudi arabia"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end destination -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Check In:</label>
+												<input type="text" name="dateFrom" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" name="dateTo" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start class -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Class:</label>
+												<select class="form-control">
+													<option value="economy" selected>Economy</option>
+													<option value="first">First</option>
+													<option value="business">Business</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-md-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-md-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Umrah Flight">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab flights -->
+
+									  <!-- start tab trains -->
+									 <div class="tab-pane" id="trains">
+										<form action="trains-results" method="get">
+										  <!-- start destination -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>From:</label>
+												<input type="text" name="from" class="form-control from-place" placeholder="Madinah, Saudi arabia"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>To:</label>
+												<input type="text" name="to" class="form-control to-place" placeholder="Jida, Saudi arabia"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end destination -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Check In:</label>
+												<input type="text" class="form-control date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" class="form-control date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start class -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Class:</label>
+												<select class="form-control">
+													<option value="economy" selected>Economy</option>
+													<option value="first">First</option>
+													<option value="business">Business</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Train">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab trains -->
+
+									 <!-- start tab hotels -->
+									 <div class="tab-pane" id="hotels">
+
+										<form action="hotels-results" method="get">
+										  <!-- start city -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>City:</label>
+												<input type="text" name="city" class="form-control from-place" placeholder="Madinah, Saudi arabia"/>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end city -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Check In:</label>
+												<input type="text" class="form-control date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" class="form-control date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start rooms -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Rooms:</label>
+												<select class="form-control">
+													<option value="economy">Economy</option>
+													<option value="regular">Regular</option>
+													<option value="vip" selected>VIP</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Hotel">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab hotel -->
+
+
+									</div><!-- end tab content -->
+								</div><!-- end tabulation -->
+							</div>
+
+							<!-- start header text -->
+							<div  id="desc-container" class="col-md-7">
+								<div class="desc-txt">
+									<h2>LET'S EXPLORE THE Umrah</h2>
+									<h3>Never Stop Exploring New Place</h3>
+								</div>
+							</div>
+							<!-- end header text -->
+
+						</div><!-- end row -->
+
+					</div><!-- end container -->
+				</div>
+			</div>
+		</div>
+		<!-- end header bottom-->
+
+		

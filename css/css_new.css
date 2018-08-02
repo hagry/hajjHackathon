@@ -1,0 +1,184 @@
+@import 'https://fonts.googleapis.com/css?family=Teko';
+
+#delcd-logo
+{
+    font-family: 'Teko';
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+#travel-icon {
+    top: -3px;
+    left: -10px;
+    width: 45px;
+}
+
+
+a
+,a:hover
+,#delcd-primary-menu a:hover, #delcd-primary-menu .active > a
+
+{
+    color: #25a67f;
+}
+
+#form-tab-panel .active
+,.btn.btn-primary
+{
+    background-color:  #25a67f;   
+}
+
+.tabulation input[type="text"]::-webkit-input-placeholder {
+  color: #25a67f;
+}
+
+.tabulation input[type="text"]::-moz-placeholder {
+  color: #25a67f;
+}
+
+.tabulation input[type="text"]:-ms-input-placeholder {
+ color: #25a67f;
+}
+
+.tabulation input[type="text"]:-moz-placeholder {
+  color: #25a67f;
+}
+
+
+
+
+
+
+.languagepicker {
+	background-color: #FFF;
+	display: inline-block;
+	padding: 0;
+	height: 40px;
+	overflow: hidden;
+	transition: all .3s ease;
+	margin: 0 50px 10px 0;
+	vertical-align: top;
+	float: left;
+}
+
+.languagepicker:hover {
+	/* don't forget the 1px border */
+	height: 81px;
+}
+
+.languagepicker a{
+	color: #000;
+	text-decoration: none;
+}
+
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 40px;
+	border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover{
+	background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+	border: none;
+    background: #f8f9fa !important;
+}
+
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+.roundborders {
+	border-radius: 5px;
+}
+
+.large:hover {
+	/* 
+	don't forget the 1px border!
+	The first language is 40px heigh, 
+	the others are 41px
+	*/
+	height: 245px;
+}  
+
+
+
+.lineTravel{
+    height: 3px;
+    width: 90%;
+    background-color: #F78536;
+    margin: .375rem auto;
+    padding: 0;
+    position: relative;
+    border-radius: .375rem;
+    display: block;
+    text-align: center;
+    line-height: 0;
+    float: left;
+}
+
+.flight-book .plane-name{
+    width: 20%;
+}
+.flight-book .desc{
+    width: 80%;
+}
+
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+
+
+.train-book .desc{
+    width:  100%;
+    
+}
+/*-- header gradient --*/
+.delcd-cover .delcd-overlay,
+.delcd-hero .delcd-overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(45, 205, 157, 0.5);
+  background: -moz-linear-gradient(left, rgba(45, 205, 157, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(45, 205, 157, 0.5)), color-stop(100%, rgba(255, 140, 0, 0.5)));
+  background: -webkit-linear-gradient(left, rgba(45, 205, 157, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+  background: -o-linear-gradient(left, rgba(45, 205, 157, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+  background: -ms-linear-gradient(left, rgba(45, 205, 157, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+  background: linear-gradient(to right, rgba(45, 205, 157, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3e1c', endColorstr='#ff8c00', GradientType=1 )};
+    
+    
+    
