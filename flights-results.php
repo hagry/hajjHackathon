@@ -41,7 +41,8 @@ $tpl->assignglobal( "countFlight",count($flight));
       $ArrFlight = explode("\n",$flight[$m]);  
 
         
-      $tpl->newBlock("flight");     
+      $tpl->newBlock("flight");
+        $airways = rand(1,3);
        
     for($i=0;$i<count($ArrFlight);$i++){
        $ArrFlightIn = explode(",",$ArrFlight[$i]) ;
@@ -60,7 +61,17 @@ $tpl->assignglobal( "countFlight",count($flight));
             $tpl->assign( "ArrivalAirport",$ArrFlightIn[2]);
             
             $tpl->assign( "DepartureDateTime",explodeDate($ArrFlightIn[3]));
-            $tpl->assign( "ArrivalDateTime",explodeDate($ArrFlightIn[4])); 
+            $tpl->assign( "ArrivalDateTime",explodeDate($ArrFlightIn[4]));
+        
+        
+            
+            $tpl->assign( "airways",$airways);
+        
+            if($airways == 1){
+              $tpl->assign( "FlightType","Direct Flight");  
+            }else{
+              $tpl->assign( "FlightType","One Stop");   
+            }
             
         
         
