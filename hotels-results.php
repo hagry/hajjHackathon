@@ -1,12 +1,12 @@
 <?
     include_once ('config.php');
 
-
-
     include_once( "header.php" );
 
 
-    $tpl = new TemplatePower( "template/$temp_name/hotels-results.htm" );
+   $city = $_GET['city'];
+
+    $tpl = new TemplatePower( "template/$temp_name/hotels-results$city.htm" );
     $tpl->prepare();
 
 

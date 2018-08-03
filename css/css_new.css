@@ -5,16 +5,28 @@
 #delcd-logo
 {
     font-family: 'Teko';
-    font-size: 36px;
+    font-size: 51px;
     letter-spacing: 2px;
+    left: 27px;
 }
 
 #travel-icon {
     top: -3px;
-    left: -10px;
-    width: 45px;
+    left: -37px;
+    width: 68px;
 }
 
+#delcd-menu-wrap{
+    margin-top: 29px;
+}
+
+.heading-section{
+ margin-bottom: 20px;    
+}
+
+.delcd-section-gray{
+    background : rgba(0, 0, 0, 0.01);
+}
 
 a
 ,a:hover
@@ -296,9 +308,11 @@ a
 }
 
 .round-01-depar:before {
+/*
   border-left: 10px solid #9298a4;
   border-top: 22px solid #fff;
   border-bottom: 22px solid #fff;
+*/
   content: "";
   height: 0;
   right: 1px;
@@ -332,9 +346,11 @@ a
 }
 
 .round-01-arriv:before {
+/*
   border-left: 10px solid #fff;
   border-top: 22px solid transparent;
   border-bottom: 22px solid transparent;
+*/
   content: "";
   height: 0;
   right: auto;
@@ -374,9 +390,11 @@ a
 }
 
 .round-02-depar:before {
+/*
   border-left: 10px solid #dce2f4;
   border-top: 22px solid #fff;
   border-bottom: 22px solid #fff;
+*/
   content: "";
   height: 0;
   right: 1px;
@@ -411,9 +429,9 @@ a
 }
 
 .round-02-arriv:before {
-  border-left: 10px solid #fff;
+/*  border-left: 10px solid #fff;
   border-top: 22px solid transparent;
-  border-bottom: 22px solid transparent;
+  border-bottom: 22px solid transparent;*/
   content: "";
   height: 0;
   right: auto;
@@ -1453,3 +1471,7 @@ a
     float: left;
 }
 
+/*---------------------*/
+.nav-header{
+    height: 102px;
+}

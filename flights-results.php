@@ -12,10 +12,26 @@
 
 
 
+    $to=$_GET['to'];
+
+
+
+   if($to == 2){
+    $flight[] = file_get_contents("json/london/option4_Lon_JED_roundtrip.txt");
+    $flight[] = file_get_contents("json/london/option1_LON_JED_MED.txt");        
+   }
+   elseif($to == 3){
+    $flight[] = file_get_contents("json/london/option3_LON_MED_roundtrip.txt");
+    $flight[] = file_get_contents("json/london/option2_LON_MED_JED.txt");      
+   }
+   else{
     $flight[] = file_get_contents("json/london/option4_Lon_JED_roundtrip.txt");
     $flight[] = file_get_contents("json/london/option3_LON_MED_roundtrip.txt");
     $flight[] = file_get_contents("json/london/option1_LON_JED_MED.txt");
-    $flight[] = file_get_contents("json/london/option2_LON_MED_JED.txt");
+    $flight[] = file_get_contents("json/london/option2_LON_MED_JED.txt");       
+   }
+
+
     
 
 

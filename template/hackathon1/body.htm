@@ -16,11 +16,14 @@
 								      <li class="nav-item">
 								      	<a class="nav-link active" href="#flights" data-toggle="tab">Flights</a>
 								      </li>
+									  <li class="nav-item">
+								    	   <a class="nav-link" href="#hotels" data-toggle="tab">Hotels</a>
+								      </li>								      
 								      <li class="nav-item">
 								    	   <a class="nav-link" href="#trains" data-toggle="tab">Trains</a>
 								      </li>
-									  <li class="nav-item">
-								    	   <a class="nav-link" href="#hotels" data-toggle="tab">Hotels</a>
+								      <li class="nav-item">
+								    	   <a class="nav-link" href="#trains" data-toggle="tab">Car Rental</a>
 								      </li>
 								   </ul>
 
@@ -43,10 +46,10 @@
 											  <div class="form-group">
 												<label>To Umrah:</label>
 												
-												<select class="form-control to-place" style="background: rgba(0, 0, 0, 0.05);color: #25a67f;font-weight: bold">
-                                                    <option>Smart choice</option>
-												    <option>Jida First</option>
-												    <option>Madinah First</option>
+												<select name="to" class="form-control to-place" style="background: rgba(0, 0, 0, 0.05);color: #25a67f;font-weight: bold">
+                                                    <option value="1">Smart choice</option>
+												    <option value="2">Jida First</option>
+												    <option value="3">Madinah First</option>
 												</select>
 											  </div>
 											</div>
@@ -226,7 +229,10 @@
 											<div class="col-sm-12">
 											 <div class="form-group">
 												<label>City:</label>
-												<input type="text" name="city" class="form-control from-place" placeholder="Madinah, Saudi arabia"/>
+												<select class="form-control to-place" name="city" style="background: rgba(0, 0, 0, 0.05);color: #25a67f;font-weight: bold">
+												    <option value="1">Makkah</option>
+												    <option value="2">Madinah</option>
+												</select>
 											 </div>
 											</div>
 										  </div>
@@ -283,7 +289,8 @@
 											 <div class="form-group">
 												<label>Children:</label>
 												<select class="form-control">
-													<option value="1" selected>1</option>
+												    <option value="0" selected>0</option>
+													<option value="1">1</option>
 													<option value="2">2</option>
 													<option value="3">3</option>
 													<option value="4">4</option>
