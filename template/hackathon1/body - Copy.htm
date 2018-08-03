@@ -1,0 +1,731 @@
+
+
+		<!-- start header bottom-->
+		<div class="delcd-hero">
+			<div class="delcd-overlay"></div>
+			<div class="delcd-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/1.png);">
+				<div class="desc">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-5">
+								<div class="tabulation">
+
+								  <!-- Nav tabs -->
+								   <ul id="form-tab-panel" class="nav nav-tabs">
+								      <li class="nav-item">
+								      	<a class="nav-link active" href="#flights" data-toggle="tab">Flights</a>
+								      </li>
+								      <li class="nav-item">
+								    	   <a class="nav-link" href="#trains" data-toggle="tab">Trains</a>
+								      </li>
+									  <li class="nav-item">
+								    	   <a class="nav-link" href="#hotels" data-toggle="tab">Hotels</a>
+								      </li>
+								   </ul>
+
+								   <!-- Tab panes -->
+								   <div class="tab-content">
+
+									 <!-- start tab flights -->
+									 <div class="tab-pane active" id="flights">
+										 <form action="flights-results" method="get">
+										  <!-- start destination -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>From:</label>
+												<input type="text" name="from" class="form-control from-place" placeholder="Cairo , Egypt"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>To:</label>
+												<input type="text" name="to" class="form-control to-place" placeholder="Jida, Saudi arabia"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end destination -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Check In:</label>
+												<input type="text" name="dateFrom" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" name="dateTo" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start class -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Class:</label>
+												<select class="form-control">
+													<option value="economy" selected>Economy</option>
+													<option value="first">First</option>
+													<option value="business">Business</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-md-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-md-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Flight">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab flights -->
+
+									  <!-- start tab trains -->
+									 <div class="tab-pane" id="trains">
+										 <form>
+										  <!-- start destination -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>From:</label>
+												<input type="text" class="form-control from-place" placeholder="Madinah, Saudi arabia"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>To:</label>
+												<input type="text" class="form-control to-place" placeholder="Jida, Saudi arabia"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end destination -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Check In:</label>
+												<input type="text" class="form-control date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" class="form-control date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start class -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Class:</label>
+												<select class="form-control">
+													<option value="economy" selected>Economy</option>
+													<option value="first">First</option>
+													<option value="business">Business</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Train">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab trains -->
+
+									 <!-- start tab hotels -->
+									 <div class="tab-pane" id="hotels">
+
+										<form>
+										  <!-- start city -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>City:</label>
+												<input type="text" class="form-control from-place" placeholder="Madinah, Saudi arabia"/>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end city -->
+
+										  <!-- start check in -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Return:</label>
+												<input type="text" class="form-control date-start" placeholder="mm/dd/yyyy"/>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<label>Check Out:</label>
+												<input type="text" class="form-control date-end" placeholder="mm/dd/yyyy"/>
+											  </div>
+											</div>
+										  </div>
+										  <!-- end check in -->
+
+										  <!-- start rooms -->
+										  <div class="form-row">
+											<div class="col-sm-12">
+											 <div class="form-group">
+												<label>Rooms:</label>
+												<select class="form-control">
+													<option value="economy">Economy</option>
+													<option value="regular">Regular</option>
+													<option value="vip" selected>VIP</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end class -->
+
+										  <!-- start age -->
+										  <div class="form-row">
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Adult:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+
+											<div class="col-sm-6">
+											 <div class="form-group">
+												<label>Children:</label>
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											 </div>
+											</div>
+										  </div>
+										  <!-- end age -->
+
+										  <div class="form-row">
+											<div class="col-sm-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Hotel">
+											</div>
+										  </div>
+
+										</form>
+									 </div>
+									 <!-- end tab hotel -->
+
+
+									</div><!-- end tab content -->
+								</div><!-- end tabulation -->
+							</div>
+
+							<!-- start header text -->
+							<div  id="desc-container" class="col-md-7">
+								<div class="desc-txt">
+									<h2>LET'S EXPLORE THE Umrah</h2>
+									<h3>Never Stop Exploring New Place</h3>
+								</div>
+							</div>
+							<!-- end header text -->
+
+						</div><!-- end row -->
+
+					</div><!-- end container -->
+				</div>
+			</div>
+		</div>
+		<!-- end header bottom-->
+
+		<!-- start hot tours -->
+		<div id="delcd-tours" class="delcd-section-gray">
+			<div class="container">
+
+				<!-- start subheading -->
+				<div class="row">
+					<div class="col-md-8 offset-md-2 text-center heading-section">
+						<h3>Hot Tours</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div>
+				</div>
+				<!-- end subheading -->
+
+				<!-- start hot place -->
+				<div class="row">
+
+					<div class="col-lg-4 delcd-tours animate-box">
+						<div class="hot-img-container">
+							<a href="#">
+								<img src="images/medium/europe/europe-1.jpg" class="img-fluid" alt="" />
+							</a>
+							<div class="desc">
+								<span></span>
+								<h3>Greece</h3>
+								<span>3 nights + Flight 5*Hotel</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="tour-detail.html">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 delcd-tours animate-box">
+						<div class="hot-img-container">
+							<a href="#">
+								<img src="images/medium/europe/europe-3.jpg" class="img-fluid" alt="" />
+							</a>
+							<div class="desc">
+								<span></span>
+								<h3>Venice</h3>
+								<span>4 nights + Flight 5*Hotel</span>
+								<span class="price">$2,200</span>
+								<a class="btn btn-primary btn-outline" href="tour-detail.html">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 delcd-tours animate-box">
+						<div class="hot-img-container">
+							<a href="#">
+								<img src="images/medium/europe/europe-2.jpg" class="img-fluid" alt="" />
+							</a>
+							<div class="desc">
+								<span></span>
+								<h3>Denmark</h3>
+								<span>2 nights + Flight 4*Hotel</span>
+								<span class="price">$1,350</span>
+								<a class="btn btn-primary btn-outline" href="tour-detail.html">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12 text-center animate-box">
+						<p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Offers <i class="icon-arrow-right22"></i></a></p>
+					</div>
+
+				</div>
+				<!-- end hot place -->
+
+			</div>
+		</div>
+		<!-- end hot tours -->
+
+		<!-- start travel plans -->
+		<div id="delcd-features">
+			<div class="container">
+
+			<div class="row">
+
+				<!-- masking text -->
+				<div class="col-lg-6">
+					<div class="blend-container">
+						<h2>Plans</h2>
+					</div>
+				</div>
+
+				<!-- travel plans -->
+				<div class="col-lg-6">
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-hotairballoon"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Family Travel</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-wine"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Business Travel</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-genius"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Solo Travel</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-search"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Explorer</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-network"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Group Travel</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-basecamp"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Camping</h3>
+									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+									<p><a href="tour-detail.html">Learn More</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<!-- end travel plans -->
+
+		<!-- start popular destination -->
+		<div id="delcd-destination">
+			<div class="tour-fluid">
+
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/mountain/pexels-photo-371659.jpg); ">
+								<a href="images/medium/mountain/pexels-photo-371659.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>YellowStone</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/europe/pexels-photo-38050-medium.jpg); ">
+								<a href="images/medium/europe/pexels-photo-38050-medium.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>Venice</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/mountain/pexels-photo-307008.jpg); ">
+								<a href="images/medium/mountain/pexels-photo-307008.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>California</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/asian/photo-1463319761689-90a4a0f29512.jpg); ">
+								<a href="images/medium/asian/photo-1463319761689-90a4a0f29512.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>Japan</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-3 col-md-3 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/asian/pexels-photo-165939.jpeg);">
+								<a href="images/medium/asian/pexels-photo-165939.jpeg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>India</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-md-6 dest-grid">
+							<div class="title-bg">
+								<div class="title-bg-txt">
+									<h2>Popular Destinations</h2>
+									<span><a href="#">View All Destinations</a></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-3 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/asian/pexels-photo-62348.jpg); ">
+								<a href="images/medium/asian/pexels-photo-62348.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>India</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/asian/pexels-photo-204870.jpeg); ">
+								<a href="images/medium/asian/pexels-photo-204870.jpeg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>Indonesia</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/europe/pexels-photo-208213.jpg); ">
+								<a href="images/medium/europe/pexels-photo-208213.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>Spain</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/europe/pexels-photo-417344.jpg); ">
+								<a href="images/medium/europe/pexels-photo-417344.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>Italy</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-md-6 dest-grid">
+							<div class="destination-list" style="background-image: url(images/medium/mountain/pexels-photo-238622.jpg); ">
+								<a href="images/medium/mountain/pexels-photo-238622.jpg" class="image-popup">
+									<div class="case-studies-summary">
+										<h2>England</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- end popular destination -->
+
+		<!-- start recent blog-section -->
+		<div id="delcd-blog-section" class="delcd-section-gray">
+
+			<!-- start subheading -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-md-2 text-center heading-section">
+						<h3>Recent Blog</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+					</div>
+				</div>
+			</div>
+			<!-- end subheading -->
+
+			<!-- start blog content -->
+			<div class="container">
+
+				<div class="row">
+					<div class="feature-full-1col animate-box">
+						<div class="image" style="background-image: url(images/medium/mountain/pexels-photo-307008.jpg);"></div>
+						<div class="desc">
+							<h3>California</h3>
+							<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. Vivamus augue enim, consectetur ac interdum a, pulvinar ac massa. Nullam malesuada congue </p>
+							<p><a href="blog-detail.html" class="btn btn-primary btn-luxe-primary">Read More <i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+
+					<div class="feature-full-2col animate-box">
+						<div class="f-hotel">
+							<div class="image" style="background-image: url(images/medium/europe/pexels-photo-164431.jpeg);"></div>
+							<div class="desc">
+								<h3>Italy</h3>
+								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo,
+								in suscipit urna condimentum sed. </p>
+								<p><a href="blog-detail.html" class="btn btn-primary btn-luxe-primary">Read More<i class="ti-angle-right"></i></a></p>
+							</div>
+						</div>
+						<div class="f-hotel">
+							<div class="image" style="background-image: url(images/medium/europe/pexels-photo-2487712.jpg);"></div>
+							<div class="desc">
+								<h3>Greece</h3>
+								<p>Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. </p>
+								<p><a href="blog-detail.html" class="btn btn-primary btn-luxe-primary">Read More <i class="ti-angle-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- end blog content -->
+
+		</div>
+		<!-- end recent blog-section -->
+
+		<!-- start testimonial -->
+		<div id="delcd-testimonial" style="background-image:url(images/large/rock/pexels-photo-749090.jpg);">
+			<div class="container">
+
+				<!-- start subheading -->
+				<div class="row">
+					<div class="col-md-8 offset-md-2 text-center delcd-heading">
+						<h2>Happy Clients</h2>
+					</div>
+				</div>
+				<!-- end subheading -->
+
+				<!-- start testimonial box -->
+				<div class="row">
+
+					<!-- box 1 -->
+					<div class="col-md-4">
+						<div class="box-testimony">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
+								<p>&ldquo;inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.&rdquo;</p>
+							</blockquote>
+							<p class="author">Alex Smith<span class="subtext">Businessman</span></p>
+						</div>
+					</div>
+
+					<!-- box 2 -->
+					<div class="col-md-4">
+						<div class="box-testimony">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
+								<p>&ldquo;inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas .&rdquo;</p>
+							</blockquote>
+							<p class="author">Kevin Ben<span class="subtext">Hotel Owner</span></p>
+						</div>
+					</div>
+
+					<!-- box 3 -->
+					<div class="col-md-4">
+						<div class="box-testimony">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
+								<p>&ldquo;inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem .&rdquo;</p>
+							</blockquote>
+							<p class="author">Smith Lee<span class="subtext">Restaurant Chef</span></p>
+						</div>
+					</div>
+
+				</div>
+				<!-- end testimonial box -->
+
+			</div>
+		</div>
+		<!-- end testimonial -->
